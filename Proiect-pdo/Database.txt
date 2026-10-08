@@ -1,0 +1,12 @@
+scores
+	placements
+		id A_I
+		imagine VARCHAR 80
+		scor VARCHAR 80
+		nume VARCHAR 80
+	placements_update
+		id A_I
+		nume VARCHAR 80
+		status VARCHAR 80
+		endtimp TIMESTAMP
+      
