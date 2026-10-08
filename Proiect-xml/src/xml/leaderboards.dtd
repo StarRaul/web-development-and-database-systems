@@ -1,0 +1,70 @@
+<!ELEMENT leaderboards (metadata, users, games, messages)>
+
+<!ELEMENT metadata (title, description, formula, logo)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT formula ANY>
+<!ELEMENT logo ANY>
+
+<!ELEMENT users (user+)>
+<!ELEMENT user (username, password)>
+<!ATTLIST user
+    id CDATA #REQUIRED
+    role (admin|user) #REQUIRED
+>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+
+<!ELEMENT games (game+)>
+<!ELEMENT game (n, image, description, placements)>
+<!ATTLIST game
+    id ID #REQUIRED
+>
+<!ELEMENT n (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT placements (placement*)>
+<!ELEMENT placement (imagine, scor, nume)>
+<!ATTLIST placement
+    id CDATA #REQUIRED
+>
+<!ELEMENT imagine (#PCDATA)>
+<!ELEMENT scor (#PCDATA)>
+<!ELEMENT nume (#PCDATA)>
+
+<!ELEMENT messages (message*)>
+<!ELEMENT message (name, email, mesaj)>
+<!ATTLIST message
+    id CDATA #REQUIRED
+>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mesaj (#PCDATA)>
+
+<!ELEMENT math ANY>
+<!ATTLIST math xmlns CDATA #IMPLIED>
+<!ELEMENT mrow ANY>
+<!ELEMENT mi (#PCDATA)>
+<!ELEMENT mo (#PCDATA)>
+<!ELEMENT mfrac ANY>
+
+<!ELEMENT svg ANY>
+<!ATTLIST svg 
+    xmlns CDATA #IMPLIED 
+    viewBox CDATA #IMPLIED 
+    width CDATA #IMPLIED 
+    height CDATA #IMPLIED
+>
+<!ELEMENT circle ANY>
+<!ATTLIST circle 
+    cx CDATA #IMPLIED 
+    cy CDATA #IMPLIED 
+    r CDATA #IMPLIED 
+    fill CDATA #IMPLIED 
+    stroke CDATA #IMPLIED 
+    stroke-width CDATA #IMPLIED
+>
+<!ELEMENT polygon ANY>
+<!ATTLIST polygon 
+    points CDATA #IMPLIED 
+    fill CDATA #IMPLIED
+>

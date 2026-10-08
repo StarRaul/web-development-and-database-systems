@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="leaderboards.xsl"?>
+<!DOCTYPE leaderboards SYSTEM "leaderboards.dtd">
+<leaderboards>
+  <metadata>
+    <title>Game Leaderboards</title>
+    <description>Top scores for Alan Wake 2, Resident Evil 4 and Titanfall 2.</description>
+    <formula>
+      <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+          <mi>Rank</mi>
+          <mo>=</mo>
+          <mfrac>
+            <mrow>
+              <mi>Score</mi>
+              <mo>×</mo>
+              <mi>Difficulty</mi>
+            </mrow>
+            <mi>Time</mi>
+          </mfrac>
+        </mrow>
+      </math>
+    </formula>
+    <logo>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80">
+        <circle cx="50" cy="50" r="45" fill="#1a1a2e" stroke="#ffffff" stroke-width="2"/>
+        <polygon points="50,20 65,45 80,45 68,60 73,80 50,67 27,80 32,60 20,45 35,45" fill="#ffffff"/>
+      </svg>
+    </logo>
+  </metadata>
+  <users>
+    <user id="1" role="admin">
+      <username>admin</username>
+      <password>admin</password>
+    </user>
+    <user id="2" role="user">
+      <username>raul</username>
+      <password>abcd</password>
+    </user>
+    <user id="3" role="user">
+      <username>stefan</username>
+      <password>1234</password>
+    </user>
+  </users>
+  <games>
+    <game id="alanwake">
+      <n>Alan Wake 2</n>
+      <image>images/alanwake2.jpg</image>
+      <description>View top scores in completing Alan Wake's story</description>
+      <placements>
+        <placement id="1">
+          <imagine>./images/1774861616_7381.jpg</imagine>
+          <scor>123</scor>
+          <nume>admin</nume>
+        </placement>
+        <placement id="2">
+          <imagine>./images/1774861621_4484.jpg</imagine>
+          <scor>456</scor>
+          <nume>admin</nume>
+        </placement>
+      </placements>
+    </game>
+    <game id="residentevil">
+      <n>Resident Evil 4</n>
+      <image>images/residentevil.jpg</image>
+      <description>View top scores in accomplishing Leon S. Kennedy's mission</description>
+      <placements/>
+    </game>
+    <game id="titanfall">
+      <n>Titanfall 2</n>
+      <image>images/titanfall.jpg</image>
+      <description>View top scores in Jack Cooper's attempt to stop the opposing forces</description>
+      <placements/>
+    </game>
+  </games>
+  <messages/>
+</leaderboards>
